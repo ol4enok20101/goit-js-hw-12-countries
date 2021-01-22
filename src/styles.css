@@ -12,8 +12,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-
-  /*
-   * CSS image reference example.
-   */
+  background-color: lightgrey;
+}
+.contriesInput {
+  border: 1px solid black;
+  border-radius: 3px;
+  height: 24px;
+  width: 120px;
+  font-size: 14px;
 }
