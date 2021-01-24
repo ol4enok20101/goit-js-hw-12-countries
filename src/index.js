@@ -17,7 +17,8 @@ const errorMessage = () =>
   });
 
 const countrySearch = debounce(() => {
-  refs.countriesRef.innerHTML = '';
+  refs.aboutCountry.innerHTML = '';
+
   fetchCountries(refs.input.value).then(response => {
     if (response.length > 10) {
       errorMessage();
@@ -30,6 +31,7 @@ const countrySearch = debounce(() => {
       refs.countriesRef.insertAdjacentHTML('beforeend', markup);
     }
   });
+  refs.input.value = '';
 }, 1000);
 
 refs.input.addEventListener('input', countrySearch);
